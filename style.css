@@ -1,0 +1,66 @@
+.nav-link{
+    font-weight: 600;
+    font-size: 1.2rem !important;
+    color:#dcd9d9 !important;
+
+
+}
+
+.nav-link:hover{
+    color: white !important;
+}
+
+#presentTime{
+    font-size: 8rem;
+    cursor: pointer;
+
+}
+
+@media (max-width: 600px) {
+    #presentTime{
+        font-size: 4rem;
+    }
+    
+
+}
+
+.date{
+    cursor: pointer;
+
+}
+.play, .reset, .pause{
+   transform: translateY(-4px);
+  box-shadow: 0 10px 15px -3px rgba(255, 254, 254, 0.292);
+  transition: all 0.3s ease;
+}
+
+.reset{
+    display: none;
+}
+
+.pause{
+    display: none;
+}
+
+#display{
+    font-family: monospace;
+}
+.timeMarker{
+    cursor: pointer;
+}
+.timeMarking-container{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: max-content;
+}
+
+.divider{
+    height: 1px;
+    width: 100%;
+}
+
+@media (max-width:768px) {
+    .timeMarking-container{
+        grid-template-columns: repeat(1, 1fr) !important;
+        gap: 30px;
+    }
+}
